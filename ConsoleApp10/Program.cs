@@ -20,6 +20,11 @@ namespace baseobject
             Triangle tri = new Triangle(bredd, höjd);
             Console.WriteLine("Arean är " + tri);
             Console.WriteLine("Omkretsen är " + tri);
+
+            Rectangle rec = new Rectangle(bredd, höjd);
+            Console.WriteLine("Arean är " + rec);
+            Console.WriteLine("Omkretsen är " + rec);
+
         }
     }
 }
