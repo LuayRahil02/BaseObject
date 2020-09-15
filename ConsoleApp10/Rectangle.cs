@@ -20,7 +20,7 @@ namespace baseobject
 
         public int Circumferance()
         {
-            int Circumferance = width * 4;
+            int Circumferance = width * 2 + height * 2;
             return Circumferance;
         }
 

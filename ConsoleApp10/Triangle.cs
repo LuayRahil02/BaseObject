@@ -18,9 +18,9 @@ namespace baseobject
 
         }
 
-        public int Circumferance()
+        public double Circumferance()
         {
-            int Circumferance = height + width * 2;
+            double Circumferance = height + width + Math.Sqrt(height*height + width*width);
             return Circumferance;
         }
 
