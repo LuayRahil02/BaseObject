@@ -17,13 +17,15 @@ namespace baseobject
             int bredd = int.Parse(Console.ReadLine());
             Console.WriteLine("Höjden är " + bredd);
 
+            Console.WriteLine("Triangeln:");
             Triangle tri = new Triangle(bredd, höjd);
-            Console.WriteLine("Arean är " + tri);
-            Console.WriteLine("Omkretsen är " + tri);
+            Console.WriteLine("Arean är " + tri.Area());
+            Console.WriteLine("Omkretsen är " + tri.Circumferance());
 
+            Console.WriteLine("Rektangeln: ");
             Rectangle rec = new Rectangle(bredd, höjd);
-            Console.WriteLine("Arean är " + rec);
-            Console.WriteLine("Omkretsen är " + rec);
+            Console.WriteLine("Arean är " + rec.Area());
+            Console.WriteLine("Omkretsen är " + rec.Circumferance());
 
         }
     }
