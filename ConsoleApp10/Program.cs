@@ -12,21 +12,30 @@ namespace baseobject
         {
             Console.WriteLine("Skriv en höjd");
             int höjd = int.Parse(Console.ReadLine());
-            Console.WriteLine("Höjden är " + höjd);
-            Console.WriteLine("Skriv en bredd");
+            Console.WriteLine("Din höjd är " + höjd);
+            Console.WriteLine("Skriv en Bredd");
             int bredd = int.Parse(Console.ReadLine());
-            Console.WriteLine("Höjden är " + bredd);
+            Console.WriteLine("Din höjd är " + bredd);
+            string form;
+            Console.WriteLine("vilken form vill du göra?");
+            form = Console.ReadLine();
+            if (form = rektangel)
+            {
+                Rectangle rec = new Rectangle(bredd, höjd);
+                Console.WriteLine("Rektanglens arean är " + rec);
+                Console.WriteLine("Rektanglens omkretsen är " + rec);
+            }
+            else if (form = triangel)
+            {
+                Triangle tri = new Triangle(bredd, höjd);
+                Console.WriteLine("Trianglens arean är " + tri);
+                Console.WriteLine("Trianglens omkretsen är " + tri);
+            }
 
-            Console.WriteLine("Triangeln:");
-            Triangle tri = new Triangle(bredd, höjd);
-            Console.WriteLine("Arean är " + tri.Area());
-            Console.WriteLine("Omkretsen är " + tri.Circumferance());
+            else
+            {
+                Console.WriteLine("fel svar");
 
-            Console.WriteLine("Rektangeln: ");
-            Rectangle rec = new Rectangle(bredd, höjd);
-            Console.WriteLine("Arean är " + rec.Area());
-            Console.WriteLine("Omkretsen är " + rec.Circumferance());
-
-        }
+            }
     }
 }
